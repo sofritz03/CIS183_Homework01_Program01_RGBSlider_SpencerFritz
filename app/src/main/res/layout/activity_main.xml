@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#000000">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <!-- Red -->
+    <TextView
+        android:id="@+id/redText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <SeekBar
+        android:id="@+id/redSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="0"
+        />
+
+    <!-- Green -->
+    <TextView
+        android:id="@+id/greenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <SeekBar
+        android:id="@+id/greenSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="0"
+        />
+
+    <!-- blue -->
+    <TextView
+        android:id="@+id/blueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        />
+
+    <SeekBar
+        android:id="@+id/blueSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="0"
+        />
+
+    <!-- hexadecimal color -->
+    <TextView
+        android:id="@+id/hexText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Hex Representation:   000000"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        />
+
+    <!-- save button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="SAVE COLOR"
+        />
+
+    <!-- saved colors -->
+    <ListView
+        android:id="@+id/colorListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
